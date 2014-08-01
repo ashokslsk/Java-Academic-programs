@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>pg9</title>
+</head>
+<body bgcolor=orange>
+<form method="post" name="form1" action="http://localhost:8080/pg9/servlet/serv9">
+<center>
+<b><br><br>
+Enter User Name : <input type="text" name="uname" size="10"><br>
+Enter Password : <input type="password" name="pname" size="10">
+<br><br>
+<input type=button value="Submit" onclick="validate()">
+</center>
+<script type="text/javascript">
+function validate()
+{
+if(document.form1.uname.value=="" || document.form1.pname.value=="")
+{
+alert("Fields cannot be blank");
+return;
+}
+document.form1.submit();
+}
+</script>
+</form>
+</body>
+</html>

@@ -1,0 +1,14 @@
+Follow The steps Exactly 
+
+1. Compile The all Files with javac
+	AddClient
+	AddServer
+	AddserverImpl
+	AddServerIntf
+2. rmic AddServerImpl
+3. Start rmiregistry
+4. Open 2 new command prompt and run files on different prompt with 'java' command
+	AddServer
+	AddClient
+5. pass 2 values on running of AddClient  
+ 

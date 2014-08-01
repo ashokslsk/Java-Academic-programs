@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>File Download</title>
+</head>
+<script type="text/javascript">
+function validate()
+{
+if(document.form1.f1.value=="")
+alert("First click on browse and select thefile");
+else
+document.form1.submit();
+}
+</script>
+<body bgcolor="lightblue">
+<form name="form1" method="get" action="http://localhost:8080/pg10/servlet/serv10">
+<p>
+<center>
+<br><br>
+<h1>File Download Program</h1>
+<br><br>
+<h3>Click on Browse and select the file</h3>
+<br><br>
+<input type="file" name="f1" size="40">
+<br><br>
+<input type="submit" value="Click to start downloading"
+onclick="validate()">
+</center>
+</p>
+</form>
+</body>
+</html>
